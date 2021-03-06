@@ -9,7 +9,7 @@ class Home extends Component {
 
     componentDidMount() {
         axios
-            .get(`https://api.thecatapi.com/v1/images/search`)
+            .get(`https://iron-cors-anywhere.herokuapp.com/https://api.thecatapi.com/v1/images/search`)
             .then(res => {
                 console.log(res.data[0].url)
                 this.setState({
